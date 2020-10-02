@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Personas {
 
+	public Personas() {
+	}
+
+	public Personas(String name, String surname, int age) {
+	}
+
 	public void RecogerDatos() {
 		
 		Scanner scn = new Scanner(System.in);
@@ -16,6 +22,8 @@ public class Personas {
 		
 		System.out.println("Introduzca edad:");
 		int age = Integer.parseInt(scn.nextLine());
+		
+		Personas person = new Personas(name, surname, age);
 	}
 	
 }
